@@ -1,0 +1,10 @@
+<ion-view view-title="{{'Camera' | translate}}">
+  <ion-content class="padding">
+      <button ng-click="getPhoto()" class="button button-block button-primary">Take Photo 1</button>
+      <img ng-src="{{lastPhoto}}" style="max-width: 100%">
+      <button ng-click="takePhoto()" class="button button-block button-primary">Take Photo 2</button>
+      <img ng-src="{{takePhoto}}" style="max-width: 100%">
+     <button ng-click="searchPhoto()" class="button button-block button-primary">Search Photo</button>
+      <img src="{{searchPhoto}}" style="max-width: 100%">
+  </ion-content>
+</ion-view>

@@ -1,0 +1,12 @@
+<ion-view view-title="{{ 'Globalization' | translate }}">
+  <ion-content>
+    <ion-toggle ng-change="changeTranslate(defaultTranslate)" ng-model="defaultTranslate" ng-init="defaultTranslate == true">
+        Default translate
+    </ion-toggle>
+    <ion-list >
+        <ion-item ng-repeat="text in texts" translate>
+            {{text}}
+        </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
